@@ -51,13 +51,13 @@ const Header = () => {
           <a href="/">
             <img
               className="sm:max-w-[59.6px] lg:h-[90px] max-w-[42.38px] h-[64px] mt-4 sm:mt-[42px]"
-              src="assets/images/png/Venveo-logo.png"
+              src="/assets/images/webp/Venveo-logo.webp"
               alt="nav-logo"
             />
           </a>
           <div
             className={`menuList ${isMenuOpen ? 'max-lg:left-0' : 'max-lg:left-[-100%]'
-              } z-10 max-lg:w-full max-lg:fixed max-lg:justify-center max-lg:top-0 max-lg:bg-green max-lg:flex-col max-lg:transition-all duration-800 flex items-center max-lg:min-h-screen`}
+              } z-10 max-lg:w-full max-lg:fixed max-lg:justify-center max-lg:top-0 max-lg:bg-aqua-green max-lg:flex-col max-lg:transition-all duration-800 flex items-center max-lg:min-h-screen`}
           >
             <div className="lg:flex-row flex flex-col">
               <div className="lg:max-w-[800px] w-full lg:flex-row flex flex-col lg:bg-white lg:pr-[29.5px] lg:ps-[41.79px] lg:h-[80px] items-center max-lg:gap-6 lg:gap-[42px]">
@@ -73,7 +73,7 @@ const Header = () => {
                         e.preventDefault();
                         toggleDropdown(index);
                       }}
-                      className="flex font-medium items-center gap-1 text-custom-lg leading-5 hover:text-dark-green transition-all duration-700"
+                      className="flex font-medium font-maisonMedium items-center gap-1 text-custom-lg leading-5 hover:text-dark-green transition-all duration-700"
                     >
                       {item.list}
                       <span

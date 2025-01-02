@@ -7,33 +7,33 @@ const Tab = ({ activeTab }) => {
     switch (activeTab) {
         case "industry":
             return (
-                <div className="relative bg-cover bg-tab-industry-bg !max-w-[1280px] bg-center sm:px-20 sm:py-16 px-4 py-6 bg-no-repeat lg:h-[720px]">
+                <div className="relative bg-cover bg-tab-industry-bg !max-w-[1280px] bg-center sm:px-12 xl:ps-[76px] xl:pe-[60px] sm:py-16 px-4 py-6 bg-no-repeat lg:h-[720px]">
                     <div className="lg:flex justify-between">
                         <div className="lg:w-4/12 w-full">
                             <Heading classStyle={'text-white uppercase'} text={'The smartest minds in the industry'} />
                             <p className="text-3xl leading-custom-6xl font-light font-maisonLight text-left text-white pb-8 max-sm:pb-4 max-sm:text-2xl pt-2">
                                 Answer our questions and listen to our answers.</p>
-                            <p className="font-normal text-custom-lg leading-5 font-maisonMono text-left text-white pb-[98px] max-lg:pb-[57px] max-sm:text-xl max-w-[373px]">
+                            <p className="font-normal text-custom-lg leading-5 font-maisonMono text-left text-white xl:pb-[98px] lg:pb-11 pb-8 max-lg:pb-[57px] max-sm:text-xl max-w-[373px]">
                                 This is placeholder but can add more to the business of building, some epic fails (and how to avoid them), and everything building science.
                             </p>
                             <div className="flex max-lg:mb-5 max-sm:w-full items-center">
-                                <button className="bg-red max-sm:w-full max-sm:justify-center flex items-center px-[32px] py-[31px] text-white leading-custom-lg text-custom-lg transition duration-700 hover:scale-105">
-                                    <img className="mr-[10px]" src="/assets/images/svg/tab-subscribe-svg.svg" alt="" />
+                                <button className="bg-red max-sm:w-full max-sm:justify-center flex items-center px-[32px] py-[31px] text-white leading-custom-lg text-custom-lg font-maisonMedium font-medium transition duration-700 hover:scale-105">
+                                    <img className="mr-[10px]" src="/assets/images/svg/tab-subscribe-svg.svg" alt="subscribe" />
                                     Subscribe to Podcast <span className="text-custom-sm leading-custom-xs ml-1 mt-[6px]"> ▼</span>
                                 </button>
                             </div>
                         </div>
                         <div className="lg:w-2/12 w-full">
-                            <div className="flex lg:flex-col gap-5 sm:justify-between items-center max-sm:overflow-auto">
-                                <img src="/assets/images/webp/Home-Depot-Logo.webp" alt="Depot-Logo" className="max-w-[66px] lg:pb-20 pointer-events-none" />
-                                <img src="/assets/images/webp/aia-logo.webp" alt="ai-Logo" className="max-w-[66px] lg:pb-[62px] pointer-events-none" />
-                                <img src="/assets/images/webp/lowes-logo.webp" alt="Lowes-Logo" className="max-w-[92px] lg:pb-[10px] pointer-events-none" />
-                                <img src="/assets/images/webp/risinger-build.webp" alt="Build-Logo" className="lg:max-w-[191px] max-w-[100px] lg:pb-[31.77px] pointer-events-none" />
+                             <div className="flex lg:flex-col gap-5 sm:justify-between items-center max-sm:overflow-auto">
+                                 <img src="/assets/images/webp/Home-Depot-Logo.webp" alt="Depot-Logo" className="max-w-[66px] lg:pb-20 pointer-events-none" />
+                                 <img src="/assets/images/webp/aia-logo.webp" alt="ai-Logo" className="max-w-[66px] lg:pb-[62px] pointer-events-none" />
+                               <img src="/assets/images/webp/lowes-logo.webp" alt="Lowes-Logo" className="max-w-[92px] lg:pb-[10px] pointer-events-none" />
+                                 <img src="/assets/images/webp/risinger-build.webp" alt="Build-Logo" className="lg:max-w-[191px] max-w-[100px] lg:pb-[31.77px] pointer-events-none" />
                                 <img src="/assets/images/webp/houzz.webp" alt="Houzz-Logo" className="max-w-[117px] pointer-events-none" />
-                            </div>
+                             </div>
                         </div>
-                        <div className="lg:w-5/12 w-full max-lg:mt-5">
-                            <img className="lg:h-[573px] w-full" src="/assets/images/webp/tab-card-man-image.webp" alt="tab-card" />
+                        <div className="lg:w-5/12 w-full max-lg:mt-5 flex lg:justify-end">
+                            <img className="lg:h-[573px] lg:max-w-[440px] w-full" src="/assets/images/webp/tab-image.webp" alt="tab-card" />
                         </div>
                     </div>
                 </div>
@@ -47,14 +47,14 @@ const Tab = ({ activeTab }) => {
                     <div className="md:block hidden lg:max-w-[293px] absolute yellow-circle bottom-0 xl:bottom-[10%] left-[-5%]">
                         <img className="lg:max-w-[293px] md:max-w-[170px] pointer-events-none" src="/assets/images/webp/tab-left-circle.webp" alt="circle" />
                     </div>
-                    <div className="md:block hidden lg:max-w-[189px] md:max-w-[140px] green-circle absolute top-[34%] right-[-5%]">
+                    <div className="md:block hidden lg:max-w-[189px] md:max-w-[149px] green-circle absolute top-[34%] xl:right-[-5%] right-[-2%]">
                         <img className="pointer-events-none" src="/assets/images/webp/tab-right-circle.webp" alt="circle" />
                     </div>
                 </div>
             );
         case "proprietary":
             return (
-                <div className="max-w-[1280px] bg-tab-proprietary-mobile-bg sm:bg-tab-proprietary-bg bg-cover bg-no-repeat bg-center px-[79px] pt-[75px] max-sm:py-9 max-lg:pt-[45px] lg:h-[720px] max-md:px-[32px] max-sm:px-4">
+                <div className="max-w-[1280px] bg-tab-proprietary-mobile-bg lg:bg-tab-proprietary-bg bg-cover bg-no-repeat bg-center px-[79px] pt-[75px] max-sm:py-9 max-lg:py-[45px] lg:h-[720px] max-md:px-[32px] max-sm:px-4">
                     <div className="lg:flex-row flex justify-between flex-col">
                         <div className="lg:w-5/12 w-full">
                             <Heading classStyle={'text-white uppercase'} text={'Project Radar'} />
@@ -67,8 +67,7 @@ const Tab = ({ activeTab }) => {
                             </div>
                         </div>
                         <div className="lg:w-5/12 w-full flex max-lg:justify-center max-lg:items-center">
-                            <img src="/assets/images/webp/tab-map.webp" alt="Tab-Three-Map" className="pointer-events-none max-lg:hidden" />
-                            <img src="/assets/images/webp/map-mobile-image.webp" alt="Tab-Three-Map" className="pointer-events-none lg:hidden" />
+                            <img src="/assets/images/webp/tab-map.webp" alt="Tab-Three-Map" className="pointer-events-none w-full" />
                         </div>
                     </div>
                 </div>
@@ -91,23 +90,23 @@ const GrowthPartner = () => {
     }, [activeTab]);
 
     return (
-        <div className="py-14 flex justify-center relative">
+        <div className="sm:py-14 max-sm:pt-8 max-sm:pb-20 flex justify-center relative">
             <div className="container max-w-[1280px] mx-auto">
-                <Heading classStyle={'text-center'} text={'THE GROWTH PARTNER'} />
-                <p className="text-3xl font-light font-maisonLight text-center pb-[43px] max-sm:pb-[19px] max-sm:text-2xl">you’ve been looking for.</p>
-                <p className="text-custom-lg font-maisonMono font-normal text-center lg:pb-[105px] pb-16 max-sm:pb-[56px]">Businesses trust Venveo to power growth.</p>
+                <Heading classStyle={'text-center uppercase'} text={'The Growth Partner'} />
+                <p className="text-3xl font-light font-maisonLight text-center sm:pb-8 lg:pb-[43px] max-sm:pb-[19px] max-sm:text-2xl">you’ve been looking for.</p>
+                <p className="text-custom-lg font-maisonMono font-normal text-center max-sm:max-w-[291px] mx-auto lg:pb-[105px] max-lg:pb-[56px]">Businesses trust Venveo to power grow.</p>
                 <div className="nav-tabs">
-                    <div className="flex justify-center gap-20 max-sm:gap-10 pb-14 tab-list max-sm:overflow-auto">
+                    <div className="flex sm:justify-center gap-20 max-sm:gap-10 pb-12 tab-list max-sm:overflow-auto w-full">
                         {TABS_DATA.map((tab) => (
                             <button
                                 key={tab.id}
-                                className={`tab text-lg text-light-black font-semibold whitespace-nowrap relative ${activeTab === tab.id ? "!text-black opacity-100" : "opacity-30"
+                                className={`tab text-lg font-maisonMedium text-light-black font-semibold whitespace-nowrap relative ${activeTab === tab.id ? "!text-black opacity-100" : ""
                                     }`}
                                 onClick={() => setActiveTab(tab.id)}>
                                 {tab.label}
                                 {activeTab === tab.id && (
                                     <img
-                                        className="absolute top-full max-w-[155px] sm:max-w-[183.85px] left-1/2 transform -translate-x-1/2"
+                                        className="absolute top-full max-w-[155.12px] left-1/2 transform -translate-x-1/2"
                                         alt="active-line"
                                         src="/assets/images/svg/tab-active-line.svg" />
                                 )}
@@ -119,7 +118,8 @@ const GrowthPartner = () => {
                     </div>
                 </div>
             </div>
-            <div className="absolute bottom-0 lg:bottom-7 -z-10 left-0 pointer-events-none"><img src="/assets/images/webp/tabs-bottom-green-line.webp" alt="tab-line" className="w-full" /></div>
+            <div className="absolute bottom-0 sm:block hidden lg:bottom-7 -z-10 left-0 pointer-events-none w-full"><img src="/assets/images/webp/tabs-bottom-green-line.webp" alt="tab-line" className="w-full" /></div>
+            <div className="absolute bottom-0 block sm:hidden lg:bottom-7 -z-10 left-0 pointer-events-none"><img src="/assets/images/webp/tabs-bottom-mobile-green-line.webp" alt="mobile-green-line" /></div>
         </div>
     );
 };

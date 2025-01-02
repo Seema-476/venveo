@@ -1,15 +1,15 @@
 import React from 'react';
 
-const OutsMart = () => {
+const OutSmart = () => {
     return (
-        <div className="bg-outsmart-bg mt-[63px] max-md:mt-12 max-sm:mt-6 bg-cover bg-no-repeat lg:bg-[100%_100%] bg-center pt-[60px] pb-20 xl:ps-[117.43px] xl:pr-[225.9px] max-sm:py-12 relative mb-14">
-            <img
-                src="/assets/images/svg/outsmart-arrow.svg"
-                alt="arrow-image"
-                className="absolute pointer-events-none xl:left-[40rem] lg:left-[28rem] xl:block hidden xl:top-[6.5rem] lg:top-[9rem] top-[11rem] sm:left-[26rem] left-[4rem] sm:top-[8rem]"
-            />
-            <div className="max-xl:container">
-                <div className="md:flex justify-between items-center max-lg:flex-col max-w-[1920px] mx-auto">
+        <div className="bg-outsmart-bg mt-[63px] max-md:mt-12 max-sm:mt-6 bg-cover bg-no-repeat lg:bg-[100%_100%] bg-center pt-[60px] pb-20 xl:ps-[117.43px] xl:pr-[225.9px] max-sm:py-12 mb-8">
+            <div className="container max-w-[1136.68px] relative">
+                <img
+                    src="/assets/images/svg/outsmart-arrow.svg"
+                    alt="arrow-image"
+                    className="absolute pointer-events-none xl:left-[34rem] lg:left-[28rem] xl:block hidden xl:top-[3.5rem] lg:top-[9rem] top-[11rem] sm:left-[26rem] left-[4rem] sm:top-[8rem]"
+                />
+                <div className="md:flex justify-between items-center max-lg:flex-col max-w-[1440px] mx-auto">
                     <div className="flex-col">
                         <p className="text-custom-xs font-space font-normal leading-6 text-left pb-2 font-Mono max-lg:text-center">
                             Get a free competitive analysis on your market
@@ -23,12 +23,12 @@ const OutsMart = () => {
                             id="email"
                             type="text"
                             placeholder="Enter Your Website"
-                            className="bg-transparent outline-none font-MaisonNeue placeholder:text-black text-custom-lg font-normal leading-5"
+                            className="bg-transparent font-maisonLight outline-none placeholder:text-black text-custom-lg font-normal leading-5"
                             aria-label="Enter your website"
                             required
                         />
                         <button
-                            className="text-black text-custom-lg leading-5 font-semibold text-center">
+                            className="text-black text-custom-lg font-maisonMedium leading-5 font-semibold text-center">
                             Analyze
                         </button>
                     </form>
@@ -38,4 +38,4 @@ const OutsMart = () => {
     );
 };
 
-export default OutsMart;
+export default OutSmart;

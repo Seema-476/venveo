@@ -31,11 +31,11 @@ export const NAV_ITEMS_LIST = [
     },
 ];
 export const FEATURES_LIST = [
-    { src: '/assets/images/png/wsj-logo.png', alt: 'wsj-logo', maxWidth: '49.53px' },
-    { src: '/assets/images/png/entrepreneur-logo.png', alt: 'entrepreneur-logo', maxWidth: '183.46px' },
-    { src: '/assets/images/png/fortune-logo.png', alt: 'fortune-logo', maxWidth: '116px' },
-    { src: '/assets/images/png/forbes-logo.png', alt: 'forbes-logo', maxWidth: '103.12px' },
-    { src: '/assets/images/png/inc-logo.png', alt: 'inc-logo', maxWidth: '81.02px' },
+    { src: '/assets/images/webp/wsj-logo.webp', alt: 'wsj-logo', maxWidth: '49.53px' },
+    { src: '/assets/images/webp/entrepreneur-logo.webp', alt: 'entrepreneur-logo', maxWidth: '183.46px' },
+    { src: '/assets/images/webp/fortune-logo.webp', alt: 'fortune-logo', maxWidth: '116px' },
+    { src: '/assets/images/webp/forbes-logo.webp', alt: 'forbes-logo', maxWidth: '103.12px' },
+    { src: '/assets/images/webp/inc-logo.webp', alt: 'inc-logo', maxWidth: '81.02px' },
 ]
 export const SATISFIED_CLIENT_LIST = [
     {
@@ -67,7 +67,7 @@ export const SATISFIED_CLIENT_LIST = [
     {
         bgClass: 'bg-yellow-bg',
         title: '',
-        logo: '/assets/images/webp/ub-lbm-black.webp',
+        logo: '/assets/images/webp/us-company-logo.webp',
         description: 'Driving digital revenue for over 1,000+ satisfied clients.',
         details: 'Elevate your business with our top-tier services and tech',
         stats: [
@@ -81,40 +81,41 @@ export const FOOTER_DATA = [
     {
         title: "HOW WE HELP",
         links: [
-            { text: "Drive More Awareness", href: "/" },
-            { text: "Get More Customers", href: "/" },
-            { text: "Build Your Brand", href: "/" },
-            { text: "Improve your reputation", href: "/" },
-            { text: "Track Results", href: "/" },
+            { text: "Drive More Awareness", href: "#actual" },
+            { text: "Get More Customers", href: "#hero" },
+            { text: "Build Your Brand", href: "#features" },
+            { text: "Improve your reputation", href: "#digital" },
+            { text: "Track Results", href: "#growth" },
         ],
     },
     {
         title: "WHO WE HELP",
         links: [
-            { text: "Digital Advertising", href: "/" },
-            { text: "Search Engine Ranking", href: "/" },
-            { text: "Content Marketing", href: "/" },
-            { text: "Programic Advertising", href: "/" },
-            { text: "Email Marketing", href: "/" },
+            { text: "Digital Advertising", href: "#learn" },
+            { text: "Search Engine Ranking", href: "#market" },
+            { text: "Content Marketing", href: "#actual" },
+            {
+                text: "Programic Advertising", href: "#features"},
+            { text: "Email Marketing", href: "#growth" },
         ],
     },
     {
         title: "WHY VENveo",
         links: [
-            { text: "About Us", href: "/" },
-            { text: "Careers", href: "/" },
-            { text: "Growth Studies", href: "/" },
-            { text: "Testimonials", href: "/" },
+            { text: "About Us", href: "#goals" },
+            { text: "Careers", href: "#features" },
+            { text: "Growth Studies", href: "#market" },
+            { text: "Testimonials", href: "#growth" },
         ],
     },
     {
         title: "RESOURCES",
         links: [
-            { text: "Articles", href: "/" },
-            { text: "News", href: "/" },
-            { text: "Webinars", href: "/" },
-            { text: "EBooks", href: "/" },
-            { text: "Podcast", href: "/" },
+            { text: "Articles", href: "#learn" },
+            { text: "News", href: "#market" },
+            { text: "Webinars", href: "#digital" },
+            { text: "EBooks", href: "#learn" },
+            { text: "Podcast", href: "#hero" },
         ],
     },
 ];
@@ -124,7 +125,6 @@ export const FOOTER_LIST = {
         src: "/assets/images/webp/footer-logo.webp",
         alt: "footer-logo",
         description: "Venveo is an award-winning digital marketing solutions provider.",
-        copyright: "©2024 Venveo",
     },
 
     visit: {
@@ -141,7 +141,7 @@ export const FOOTER_LIST = {
         },
         phone: {
             text: "1 · 800 · 123 · 4567",
-            link: "/",
+            link: "tellto:1 · 800 · 123 · 4567",
         },
     },
 
@@ -213,7 +213,7 @@ export const ACTUAL_RESULTS = [
         name: "Sarah Johnson",
         title: "Marketing Director at BuildPro",
         companyLogo: "/assets/images/webp/us-company-logo.webp",
-        videoThumbnail: "/assets/images/webp/actual-main-image-one.webp",
+        videoThumbnail: "/assets/images/webp/actual-main-image-two.webp",
     },
     {
         description: "They are really aligned with how we are building the business from a strategic standpoint and from branding, messaging, and cultural standpoint.",
@@ -227,6 +227,58 @@ export const ACTUAL_RESULTS = [
         name: "Michael Lee",
         title: "CEO at Constructive Works",
         companyLogo: "/assets/images/webp/us-company-logo.webp",
-        videoThumbnail: "/assets/images/webp/actual-main-image-one.webp",
+        videoThumbnail: "/assets/images/webp/actual-main-image-three.webp",
+    },
+];
+export const MARKETING_DATA = [
+    {
+        title: "multi-channel marketing",
+        subtitle: "How to Get Your Product into Lowe’s",
+        description: "Understanding the process and maximize the opportunities",
+        buttonText: "Read More",
+        bgImage: "bg-marketing-bg-one",
+    },
+
+    {
+        title: "lead-gen",
+        subtitle: "Get Your Sales Team Ready for Digital Leads",
+        description:
+            "Unlock substantial business growth by enhancing collaboration skills and digital marketing expertise",
+        bgImage: "bg-marketing-bg-two",
+        buttonText: "Read More",
+
+    },
+    {
+        title: "ecommerce",
+        subtitle: "How to Sell Building Materials Online",
+        description:
+            "Explore how selling building materials online opens up wider audiences, efficient sales, and insightful data.",
+        bgImage: "bg-marketing-bg-three",
+        buttonText: "Read More",
+
+    },
+];
+export const MARKETING_MOBILE_DATA = [
+    {
+        title: "multi-channel marketing",
+        subtitle: "How to Get Your Product into Lowe’s",
+        buttonText: "Read More",
+        bgImage: "bg-marketing-mobile-one",
+    },
+
+    {
+        title: "lead-gen",
+        subtitle: "Get Your Sales Team Ready for Digital Leads",
+        bgImage: "bg-marketing-mobile-two",
+        buttonText: "Read More",
+
+    },
+
+    {
+        title: "ecommerce",
+        subtitle: "How to Sell Building Materials Online",
+        bgImage: "bg-marketing-mobile-three",
+        buttonText: "Read More",
+
     },
 ];

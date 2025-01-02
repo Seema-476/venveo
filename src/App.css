@@ -1,14 +1,44 @@
-html,body{
-    font-family: 'maison neue';
+body {
+    font-family: 'Maison Neue', sans-serif;
 }
 @font-face {
-     font-family: 'maison neue';
-     src: url("../public/assets/fonts/MaisonNeue.ttf");
- }
- @font-face {
-     font-family: 'shone schmal';
-     src: url("../public/assets/fonts/ShoneSchmal.ttf");
- }
+    font-family: "MaisonNeueDemi";
+    src: url('../public/assets/fonts/MaisonNeue-Demi.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "MaisonNeueMedium";
+    src: url('../public/assets/fonts/MaisonNeue-Medium.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "MaisonNeueBook";
+    src: url('../public/assets/fonts/Maison-Neue-Book.ttf') format("truetype");
+}
+@font-face {
+    font-family: "MaisonNeueMono";
+    src: url('../public/assets/fonts/Maison-Neue-Mono.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "MaisonNeueLight";
+    src: url('../public/assets/fonts/MaisonNeue-Light.ttf') format("truetype");
+}
+@font-face {
+    font-family: "testSöhneSchmal";
+    src: url('../public/assets/fonts/sohne-schmal-fett.woff2') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "testSöhneSchmal";
+    src: url('../public/assets/fonts/soehne-schmal-dreiviertelfett.woff2') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
  .swiper-button-next {
     background: transparent !important;
 }
@@ -25,6 +55,8 @@ html,body{
 .swiper-pagination-clickable .swiper-pagination-bullet {
     background-color: white !important;
     border-radius: 0 !important;
+    margin-left: 16px !important;
+    margin-right: 16px !important;
 }
 
 .thumbnail-image {
@@ -33,5 +65,12 @@ html,body{
 }
 
 .swiper-slide-active .thumbnail-image {
+    opacity: 1;
+}
+.thumbnail-text{
+     opacity: 0.2;
+    transition: opacity 0.3s ease-in-out;
+}
+.swiper-slide-active .thumbnail-text {
     opacity: 1;
 }

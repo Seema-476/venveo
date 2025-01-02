@@ -25,9 +25,9 @@ const Features = () => {
     const infiniteImages = [...FEATURES_LIST, ...FEATURES_LIST];
 
     return (
-        <div className="sm:mt-16 mt-64 xl:mt-[21rem] md:mt-20 lg:mb-[50px] md:mb-10 sm:mb-8 mb-[18px]">
+        <div className="sm:mt-16 mt-64 xl:mt-[19rem] md:mt-20 lg:mb-[50px] md:mb-10 sm:mb-8 mb-[18px]" id='#features'>
             <div className="container mx-auto lg:pb-[73.94px] pb-12">
-                <p className="text-center max-w-[212px] lg:ps-[60px] mx-auto font-maisonMono text-custom-lg leading-custom-lg font-normal">Featured in</p>
+                <p className="text-center max-w-[212px] lg:ps-[60px] text-black mx-auto font-maisonMono text-custom-lg leading-custom-lg font-normal">Featured in</p>
                 <div
                     ref={sliderRef}
                     className="flex gap-12 overflow-hidden lg:hidden pt-5"
@@ -58,8 +58,8 @@ const Features = () => {
                     ))}
                 </div>
             </div>
-            <img src="/assets/images/png/features-bottom-green-line.png" alt="line-image" className="w-full sm:block hidden h-[47px] mx-auto pointer-events-none" />
-            <img src="/assets/images/png/features-mobile-green-line.png" alt="mobile-line" className='sm:hidden block w-full h-[43px] pointer-events-none' />
+            <img src="/assets/images/webp/features-bottom-green-line.webp" alt="line-image" className="w-full sm:block hidden h-[47px] mx-auto pointer-events-none" />
+            <img src="/assets/images/webp/features-mobile-green-line.webp" alt="mobile-line" className='sm:hidden block w-full h-[43px] pointer-events-none' />
         </div>
     );
 };

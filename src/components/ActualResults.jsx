@@ -8,14 +8,14 @@ import { ACTUAL_RESULTS } from '../utils/helper';
 
 const ActualResults = () => {
     return (
-        <div className="bg-actual-bg bg-no-repeat bg-center bg-cover text-white pt-[67px] lg:pt-[119px] pb-6 sm:pb-8 mt-10 relative mb-14 ov">
-            <div className='max-w-[1920px] mx-auto 2xl:container relative'>
+        <div className="bg-actual-bg bg-no-repeat bg-center bg-cover text-white pt-[67px] lg:pt-[119px] pb-6 sm:pb-8 mt-10 relative mb-14 overflow-hidden" id='actual'>
+            <div className='max-w-[1920px] mx-auto relative'>
                 <p className="font-maisonLight max-sm:px-4 font-light text-3xl leading-custom-6xl text-white text-center">
                     Actual businesses.
                 </p>
-                <Heading text={"Actual results."} classStyle={"text-center text-white max-sm:px-4"} />
+                <Heading text={"Actual results."} classStyle={"text-center text-white max-sm:px-4 uppercase"} />
                 <p className="sm:mt-[46px] mt-[22px] max-sm:px-4 md:mb-[81px] mb-[39px] text-custom-lg leading-5 font-maisonMono font-normal text-center">
-                    Businesses trust Venveo to power growth.
+                    Businesses trust Venveo to power grow.
                 </p>
 
                 <div className="swiper-button-prev absolute left-0 sm:left-4 md:left-8 top-[50%] transform translate-y-[170%] sm:-translate-y-[238%]">
@@ -33,7 +33,6 @@ const ActualResults = () => {
                     spaceBetween={30}
                     slidesPerView={1}
                     centeredSlides={true}
-                    // loop={true}
                     initialSlide={1}
                     effect="fade"
                     breakpoints={{
@@ -56,10 +55,10 @@ const ActualResults = () => {
                                     alt="Thumbnail"
                                     className="!max-w-[640px] thumbnail-image pointer-events-none w-full mx-auto object-cover rounded transition-all duration-300 ease-in-out"
                                 />
-                                <p className="mt-[30px] text-2xl leading-custom-5xl sm:text-3xl sm:leading-custom-7xl font-light font-maisonLight max-w-[251px] sm:max-w-[640px] md:mt-[74px] mx-auto">
+                                <p className="pt-[30px] thumbnail-text text-2xl leading-custom-5xl sm:text-3xl sm:leading-custom-7xl font-light font-maisonLight max-w-[251px] sm:max-w-[640px] md:pt-[74px] mx-auto">
                                     "{obj.description}"
                                 </p>
-                                <p className="mt-[23px] max-sm:px-4 text-[15px] leading-[20px] font-maisonMono font-normal">
+                                <p className="pt-[23px] max-sm:px-4 text-[15px] leading-[20px] font-maisonMono font-normal">
                                     {obj.name}
                                 </p>
                                 <p className="text-sm max-sm:px-4 text-[15px] leading-[20px] font-maisonMono font-normal">
@@ -68,7 +67,7 @@ const ActualResults = () => {
                                 <img
                                     src={obj.companyLogo}
                                     alt="Company Logo"
-                                    className="mx-auto mt-4 w-12"
+                                    className="mx-auto mt-[13px] w-[49px]"
                                 />
                             </div>
                         </SwiperSlide>
