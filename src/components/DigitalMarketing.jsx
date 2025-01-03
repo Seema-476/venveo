@@ -40,7 +40,7 @@ const DigitalMarketing = () => {
                         {displayedCards.map((obj, index) => (
                             <div
                                 key={index}
-                                className={`border-2 bg-white border-aqua-green w-full max-w-[503px] px-[30px] lg:pt-[60px] lg:pb-[50px] pt-[34px] pb-[36.25px] rounded-[25px]`}
+                                className={`border-2 bg-white border-aqua-green w-full max-w-[503px] min-h-[506px] px-[30px] lg:pt-14 lg:pb-[50px] pt-[34px] pb-[36.25px] rounded-[25px]`}
                             >
                                 <div className="lg:flex max-lg:flex-wrap gap-6">
                                     <Icon classStyle={"lg:size-[53px] size-[39.57px]"} iconName={obj.iconName} />
@@ -56,7 +56,7 @@ const DigitalMarketing = () => {
                                         >
                                             {obj.description}
                                         </p>
-                                        <ul className="list-disc md:pt-8 pl-5 pt-4">
+                                        <ul className="list-disc md:pt-[30px] pl-5 pt-4">
                                             {obj.points.map((point, idx) => (
                                                 <li
                                                     key={idx}
