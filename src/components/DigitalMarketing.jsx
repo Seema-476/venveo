@@ -7,7 +7,7 @@ const DigitalMarketing = () => {
     const [isViewMore, setIsViewMore] = useState(false);
     const toggleView = () => setIsViewMore((prev) => !prev);
     const displayedCards = isViewMore ? DIGITAL_MARKETING_LIST
-        : window.innerWidth <= 1024 
+        : window.innerWidth <= 1022 
             ? DIGITAL_MARKETING_LIST.slice(0, 1)
             : DIGITAL_MARKETING_LIST.slice(0, 4); 
     return (
@@ -35,8 +35,8 @@ const DigitalMarketing = () => {
                 alt="yellow-line"
             />
             <div className="container">
-                <div className="sm:pt-[83px] pt-11 max-w-[1072px] mx-auto">
-                    <div className="grid lg:grid-cols-2 lg:gap-x-[66px] gap-y-14 justify-center w-full">
+                <div className="xl:pt-[83px] md:pt-16 pt-11 max-w-[1072px] mx-auto">
+                    <div className="grid lg:grid-cols-2 lg:gap-x-[66px] lg:gap-y-14 gap-y-10 justify-center w-full">
                         {displayedCards.map((obj, index) => (
                             <div
                                 key={index}

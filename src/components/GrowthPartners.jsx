@@ -13,7 +13,7 @@ const Tab = ({ activeTab }) => {
                             <Heading classStyle={'text-white uppercase'} text={'The smartest minds in the industry'} />
                             <p className="text-3xl leading-custom-6xl font-light font-maisonLight text-left text-white pb-8 max-sm:pb-4 max-sm:text-2xl pt-2">
                                 Answer our questions and listen to our answers.</p>
-                            <p className="font-normal text-custom-lg leading-5 font-maisonMono text-left text-white xl:pb-[98px] lg:pb-11 pb-8 max-lg:pb-[57px] max-sm:text-xl max-w-[373px]">
+                            <p className="font-normal text-custom-lg leading-5 font-maisonMono text-left text-white lg:pb-[98px] md:pb-11 pb-8 max-lg:pb-[57px] max-sm:text-xl max-w-[373px]">
                                 This is placeholder but can add more to the business of building, some epic fails (and how to avoid them), and everything building science.
                             </p>
                             <div className="flex max-lg:mb-5 max-sm:w-full items-center">
@@ -24,7 +24,7 @@ const Tab = ({ activeTab }) => {
                             </div>
                         </div>
                         <div className="lg:w-2/12 w-full">
-                             <div className="flex lg:flex-col gap-5 sm:justify-between items-center max-sm:overflow-auto">
+                             <div className="flex lg:flex-col max-lg:!justify-between items-center max-sm:overflow-auto">
                                  <img src="/assets/images/webp/Home-Depot-Logo.webp" alt="Depot-Logo" className="max-w-[66px] lg:pb-20 pointer-events-none" />
                                  <img src="/assets/images/webp/aia-logo.webp" alt="ai-Logo" className="max-w-[66px] lg:pb-[62px] pointer-events-none" />
                                <img src="/assets/images/webp/lowes-logo.webp" alt="Lowes-Logo" className="max-w-[92px] lg:pb-[10px] pointer-events-none" />
@@ -54,7 +54,7 @@ const Tab = ({ activeTab }) => {
             );
         case "proprietary":
             return (
-                <div className="max-w-[1280px] bg-tab-proprietary-mobile-bg lg:bg-tab-proprietary-bg bg-cover bg-no-repeat bg-center px-[79px] pt-[75px] max-sm:py-9 max-lg:py-[45px] lg:h-[720px] max-md:px-[32px] max-sm:px-4">
+                <div className="max-w-[1280px] bg-tab-proprietary-mobile-bg lg:bg-tab-proprietary-bg bg-cover bg-no-repeat bg-center pl-[79px] pr-[55px] pt-[75px] max-sm:py-9 max-lg:py-[45px] lg:h-[720px] max-md:px-[32px] max-sm:px-4">
                     <div className="lg:flex-row flex justify-between flex-col">
                         <div className="lg:w-5/12 w-full">
                             <Heading classStyle={'text-white uppercase'} text={'Project Radar'} />
@@ -66,8 +66,8 @@ const Tab = ({ activeTab }) => {
                                 <CustomButton classStyle={'!px-8 !py-[31px] max-sm:w-full max-sm:flex max-sm:justify-center max-sm:items-center'} text={'Call to Action Somewhere'} />
                             </div>
                         </div>
-                        <div className="lg:w-5/12 w-full flex max-lg:justify-center max-lg:items-center">
-                            <img src="/assets/images/webp/tab-map.webp" alt="Tab-Three-Map" className="pointer-events-none w-full" />
+                        <div className="lg:w-5/12 w-full flex xl:justify-end max-lg:items-center">
+                            <img src="/assets/images/webp/tab-map.webp" alt="Tab-Three-Map" className="pointer-events-none w-full xl:max-w-[440px]" />
                         </div>
                     </div>
                 </div>

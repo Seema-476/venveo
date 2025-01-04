@@ -2,7 +2,7 @@ import React from 'react';
 import Heading from '../common/Heading';
 import Icon from '../utils/icons';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -10,7 +10,7 @@ import { SATISFIED_CLIENT_LIST } from '../utils/helper';
 
 const SatisfiedClients = () => {
     return (
-        <div className="lg:pt-[51px] md:pt-10 sm:pt-8 pt-[18px] lg:pb-[66px] md:pb-12 pb-[41px]">
+        <div className="lg:pt-[51px] md:pt-10 sm:pt-8 pt-[18px] lg:pb-[66px] md:pb-12 pb-[41px] client">
             <div className="max-w-[1920px] mx-auto">
                 <div className="max-w-[586px] mx-auto">
                     <p className="font-light sm:text-3xl sm:leading-custom-6xl text-black text-2xl leading-custom-5xl text-center font-maisonLight pb-[7px]">
@@ -57,17 +57,20 @@ const SatisfiedClients = () => {
                     <Swiper
                         spaceBetween={30}
                         slidesPerView={1}
-                        autoplay={{
-                            delay: 3000,
-                            disableOnInteraction: false,
-                        }}
+                        // autoplay={{
+                        //     delay: 3000,
+                        //     disableOnInteraction: false,
+                        // }}
                         breakpoints={{
                             640: { slidesPerView: 1 },
                             768: { slidesPerView: 2 },
                             1024: { slidesPerView: 2 },
                             1280: { slidesPerView: 3 },
+                        }} 
+                        pagination={{
+                            clickable:true
                         }}
-                        modules={[Autoplay]}
+                        modules={[Autoplay, Pagination]}
                     >
                         {SATISFIED_CLIENT_LIST.map((data, index) => (
                             <SwiperSlide key={index}>

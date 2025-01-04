@@ -74,3 +74,12 @@ body {
 .swiper-slide-active .thumbnail-text {
     opacity: 1;
 }
+.client .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+    bottom: var(--swiper-pagination-bottom, -8px) !important;
+}
+.client .swiper-pagination-clickable .swiper-pagination-bullet{
+    background-color: #00AFB5 !important;
+}
+.client .swiper-horizontal{
+    padding-bottom: 50px !important;
+}

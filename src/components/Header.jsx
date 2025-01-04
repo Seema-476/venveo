@@ -48,9 +48,9 @@ const Header = () => {
     <div className="lg:ms-[56px]">
       <div className="max-lg:container max-w-[1920px] mx-auto">
         <div className="flex justify-between items-center h-20 max-sm:h-[88px]">
-          <a href="/">
+          <a href="/" className='pt-16'>
             <img
-              className="sm:max-w-[59.6px] lg:h-[90px] max-w-[42.38px] h-[64px] mt-4 sm:mt-[42px]"
+              className="sm:max-w-[59.6px] lg:h-[90px] max-w-[42.38px] h-[64px]"
               src="/assets/images/webp/Venveo-logo.webp"
               alt="nav-logo"
             />
