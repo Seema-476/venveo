@@ -13,7 +13,7 @@ const Hero = () => {
                         <span className='block'></span>a growth machine</h1>
                     <img className='ml-[164px] max-2xl:ml-[160px] md:ml-[116px] sm:ml-32 lg:ml-[160px] max-sm:max-w-[146px] max-md:max-w-[180px] max-sm:ml-10' src="/assets/images/svg/heading-bottom-line.svg" alt="line" />
                 </div>
-                <Description classStyle={'pt-1 text-white sm:max-w-[656px] max-w-[319px] mx-auto font-light text-center sm:text-2xl text-custom-xl leading-7 sm:leading-custom-6xl'} text={'We focus on results. Not just chatter. Elevate your business with our top-tier services and tech. Get a proposal now.'} />
+                <Description classStyle={'pt-1 text-white sm:max-w-[656px] max-w-[319px] mx-auto font-light text-center sm:text-2xl text-custom-xl leading-7 sm:!leading-custom-6xl'} text={'We focus on results. Not just chatter. Elevate your business with our top-tier services and tech. Get a proposal now.'} />
                 <form action="" className="border-2 border-white mt-7 rounded-[50px] text-center py-4 sm:py-5 px-7 flex max-w-[448px] mx-auto justify-between">
                     <input
                         id="email"
