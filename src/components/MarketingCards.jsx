@@ -12,7 +12,7 @@ const MarketingCards = () => {
                     <div
                         key={index}
                         className={`max-w-[440px] w-full p-[202px_29px_29px_29px] bg-cover bg-no-repeat bg-center ${data.bgImage}`}>
-                        <div className="w-full max-w-[382px] h-[320px] bg-white p-[35px_29px_24px_28px] shadow-lg rounded-[25px]">
+                        <div className="w-full max-w-[382px] h-[320px] bg-white p-[35px_27px_24px_28px] shadow-lg rounded-[25px]">
                             <div className="flex flex-col h-full">
                                 <p className="text-aqua-green text-custom-lg leading-5 font-semibold uppercase pb-[15px]">
                                     {data.title}

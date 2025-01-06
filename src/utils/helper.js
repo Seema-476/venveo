@@ -119,7 +119,6 @@ export const FOOTER_DATA = [
         ],
     },
 ];
-
 export const FOOTER_LIST = {
     logo: {
         src: "/assets/images/webp/footer-logo.webp",

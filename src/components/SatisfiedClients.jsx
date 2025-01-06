@@ -2,7 +2,7 @@ import React from 'react';
 import Heading from '../common/Heading';
 import Icon from '../utils/icons';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination } from 'swiper/modules';
+import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -57,10 +57,6 @@ const SatisfiedClients = () => {
                     <Swiper
                         spaceBetween={30}
                         slidesPerView={1}
-                        // autoplay={{
-                        //     delay: 3000,
-                        //     disableOnInteraction: false,
-                        // }}
                         breakpoints={{
                             640: { slidesPerView: 1 },
                             768: { slidesPerView: 2 },
@@ -70,15 +66,15 @@ const SatisfiedClients = () => {
                         pagination={{
                             clickable:true
                         }}
-                        modules={[Autoplay, Pagination]}
+                        modules={[Pagination]}
                     >
                         {SATISFIED_CLIENT_LIST.map((data, index) => (
                             <SwiperSlide key={index}>
                                 <div className={`${data.bgClass} bg-cover bg-no-repeat bg-center p-[35px_20px_33px_20px] w-full xl:max-w-[440px] h-full`}>
                                     <div className="xl:max-w-[382px] p-[38px_20px_32px_22px] bg-white rounded-[25px]">
                                         {data.title && (
-                                            <div className="-mt-[55px] -ms-1 rounded-full py-[9px] max-w-[165px] px-3 group hover:bg-black transition-all duration-500">
-                                                <p className="text-xs group-hover:text-white text-black leading-5 font-semibold font-MaisonNeue transition-all duration-500">
+                                            <div className="-mt-[55px] -ms-1 rounded-full py-[9px] max-w-[165px] px-3 bg-black transition-all duration-500">
+                                                <p className="text-xs text-white leading-5 font-semibold font-MaisonNeue transition-all duration-500">
                                                     {data.title}
                                                 </p>
                                             </div>
